@@ -1,0 +1,7 @@
+<h1>{{posts_detail.title}}</h1>
+    {{posts_detail.body}}<br>
+    <a class="btn btn-default" href="{% url 'posts-edit' pk=posts_detail.pk %}">
+        редактировать
+     </a>
+     <a class="btn btn-default" href="{% url 'posts-delete' pk=posts_detail.pk %}">
+         удалить</a>
